@@ -1,0 +1,22 @@
+Closure y Scope en Javascript
+
+Scope: El scope es la accesibilidad que va a tener una variable, objeto o función dentro de un código. 
+El scope puede ser de diferentes tipos entre ellos está los globales, los locales y los de bloque.
+
+Global scope: Las variables son de scope tipo global cuando su declaración se realiza en cualquier parte 
+del código sin que haga parte de una función o algún bloque. 
+
+Es necesario tener en cuenta que a la hora de asignar un valor a una varible sin que esta sea declarada, esta variable va a tener un scope global 
+asi sea asignada dentro de una función o bloque de código.
+
+Function scope o local scope: Las variables definidas dentro de una función van a tener un alcance dentro de esa misma función y los bloques o funciones
+anidadas que hagan parte de ella, por ello, si se quisiera acceder a la variable declarada y asignada dentro de una función fuera de ella daría como
+resultado un error de referencia porque Javascript en su scope global no tiene una referencia a la variable que se invoca.
+
+Block scope: El scope de bloque permite a las variables ser referenciadas por el código que compone el bloque donde han sido declaradas, pero en caso de que
+se quieran referenciar fuera del bloque de código se presentará un error de referencia.
+Los bloques de código son aquellos que están delimitados por llaves.
+Al declarar una variable con las palabras reservadas var, let y const puede llevar a resultados diferentes.
+Al usar var en un bloque dentro de una función está variable va poder ser referenciada incluso fuera del bloque de código teniendo un scope local
+pero si se usa let o const mantienen un scope de bloque.
+
